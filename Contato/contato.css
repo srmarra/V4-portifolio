@@ -1,0 +1,75 @@
+h1{
+    font-family: 'Viaoda Libre', cursive;
+}
+
+
+
+
+#Cont{
+    max-width: 650px;
+    height: 545px;
+    background-color: #4073C9;
+    margin: 0  auto 150px auto;
+    border-radius: 20px;
+    filter: drop-shadow(rgb(148, 148, 148) 5px 5px 20px);
+    text-align: center;
+    
+}
+
+@media(max-width:670px){
+    #Cont{
+        width: 95%;
+    }
+
+}
+
+#Cont h3{
+    padding: 20px 0 0 0;
+    color: white;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+#Cont input{
+    width: 75%;
+    height: 25px;
+}
+
+#Cont textarea{
+    width: 75%;
+    height: 250px;
+    
+}
+
+#Enviar{
+    height: 50px;
+    border-radius:
+    5px; border: none;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+#Enviar:hover{
+    border: solid rgb(0, 24, 131) 1px;
+    cursor: pointer;
+    
+}
+
+
+#Concluido{
+    width: 200px;
+    height: 100px;
+    background-color: #4073C9;
+    position: fixed;
+    bottom: -100px;
+    right: 15px;
+    border-radius: 15px;
+    filter: drop-shadow(black 5px 5px 10px);
+    text-align: center;
+    transition: all 1s;
+}
+
+#Concluido h1{
+    color: white;
+    margin: 25px 0 0 0;
+}

@@ -1,0 +1,207 @@
+
+/*CSS Esclusivo para o Menu*/
+
+
+
+/*---------------------Menu---------------------*/
+.Bmenu{
+    width: 100%;
+    background: #4064c9;
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Bmenu h1{
+    font-family: 'Viaoda Libre', cursive;
+
+}
+
+.Bmenu a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.Bmenu ul li{
+    list-style: none;
+}
+
+.Bmenu ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.Bmenu ul li a:hover{
+    color: #88C92C;
+}
+
+.Bmenu ul.menu{
+    background: #4064c9;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    text-align: right;
+    display: none;
+    flex-direction: column;
+    
+}
+
+.Bmenu ul.menu li:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.Bmenu ul.button{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+
+.Bmenu ul.button li{
+    width: 100%;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.Bmenu ul.button:hover li{
+    background: rgb(150, 150, 150);
+}
+
+
+@media(min-width: 700px){
+    .Bmenu ul.menu{
+        
+        display: flex!important;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        padding: 0px;
+        background: none;
+
+    }
+    .Bmenu ul.menu li:not(:last-child){
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+    .Bmenu ul.button{
+        display:none;
+    }
+    
+}
+/*---------------------Menu---------------------*/
+
+
+
+
+/*---------------------Parte de baixo do Menu---------------------*/
+.BaseInicial{
+    padding: 10px 0 0 0;
+    width: 100%;
+    height: 420px;
+    text-align: center;
+    background: #4064c9;
+}
+.BaseInicial img{
+    box-sizing: initial;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    max-width: 100%;
+    filter: drop-shadow(rgba(0, 1, 39, 0.589) 10px 8px 15px);
+    transition: all 2s;
+}
+
+.BaseInicial img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(black 10px 8px 25px);
+}
+.BaseInicial h1{
+    font-family: 'Pacifico', cursive;
+    padding-top: 10px;
+    color: white;
+}
+
+.BaseInicial h2{
+    font-family: 'Viaoda Libre', cursive;
+    color: #88C92C;
+    font-size: 25px;
+}
+
+.BaseInicial h3{
+    font-family: 'Viaoda Libre', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.BaseInicial div{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Bdiv{
+    display: list-item;
+    flex-direction: column;
+
+}
+
+
+
+@media(max-width:640px){
+
+
+    
+    .BaseInicial h2{
+        font-size: 20px;
+    }
+    
+    .BaseInicial h3{
+        font-size: 22px;
+    }
+    }
+
+    @media(max-width:480px){
+
+
+    
+        .BaseInicial h2{
+            font-size: 18px;
+        }
+        
+        .BaseInicial h3{
+            font-size: 20px;
+        }
+        }
+
+        @media(max-width:450px){
+            .BaseInicial h2{
+                font-size: 24px;
+            }
+            
+            .BaseInicial h3{
+                font-size: 22px;
+            }
+
+
+            .BaseInicial div{
+                flex-direction: column;
+            }
+            .BaseInicial{
+                height: 685px;
+            }
+    
+            
+            }
